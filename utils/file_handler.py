@@ -1,4 +1,4 @@
-# utils/file_handler.py
+import csv
 
 # --------------------------------------------------
 # FUNCTION 1: READ SALES DATA FROM FILE

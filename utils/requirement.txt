@@ -1,0 +1,36 @@
+##System Requirements--->
+Operating System: Windows 
+Python Version: Python 3.12.10
+Internet Connection: Required (for API data enrichment)
+
+
+##Libraries used:-
+"os
+sys
+datetime
+collections
+json
+urllib / requests (if API integration uses requests)"
+
+##import all this files-->
+
+# ---------------- FILE HANDLING ----------------
+from utils.file_handler import read_sales_data
+from utils.file_handler import parse_transactions
+from utils.file_handler import validate_and_filter
+
+# ---------------- DATA PROCESSING ----------------
+from utils.data_processor import calculate_total_revenue
+from utils.data_processor import region_wise_sales
+from utils.data_processor import top_selling_products
+from utils.data_processor import low_performing_products
+from utils.data_processor import customer_analysis
+from utils.data_processor import daily_sales_trend
+from utils.data_processor import find_peak_sales_day
+from utils.data_processor import generate_sales_report
+
+# ---------------- API ----------------
+from utils.api_handler import fetch_all_products
+from utils.api_handler import create_product_mapping
+from utils.api_handler import enrich_sales_data
+from utils.api_handler import save_enriched_data
