@@ -1,4 +1,4 @@
-# Sales Analytics System (made by Aditya Vikram Singh, ID-bitsom_ba_25071160)
+# Sales Analytics System (made by Aditya Vikram Singh)
 
 ## About Assignment
 
