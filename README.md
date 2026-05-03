@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# 📊 Sales Analytics System
-<<<<<<< HEAD
 =======
-# Sales Analytics System (made by Aditya Vikram Singh)
+# 📊 Sales Analytics System (made by Aditya Vikram Singh)
 =======
->>>>>>> b4ebd1455e19ffff43651e3493b9f7f20d32cc5a
 
 A complete **end-to-end Sales Data Analytics Project** built using Python.
 This project processes raw sales data, performs analysis, enriches data using an API, and generates reports & dashboards.
@@ -57,32 +53,6 @@ sales-analytics-system/
 ├── main.py
 └── README.md
 ```
-
----
-
-## ⚙️ Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/sales-analytics-system.git
-cd sales-analytics-system
-```
-
-2. Create virtual environment (optional but recommended):
-
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## ▶️ How to Run
 
