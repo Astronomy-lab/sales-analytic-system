@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# 📊 Sales Analytics System
-<<<<<<< HEAD
 =======
-# Sales Analytics System (made by Aditya Vikram Singh)
+# 📊 Sales Analytics System (made by Aditya Vikram Singh)
 =======
->>>>>>> b4ebd1455e19ffff43651e3493b9f7f20d32cc5a
 
 A complete **end-to-end Sales Data Analytics Project** built using Python.
 This project processes raw sales data, performs analysis, enriches data using an API, and generates reports & dashboards.
@@ -57,32 +53,6 @@ sales-analytics-system/
 ├── main.py
 └── README.md
 ```
-
----
-
-## ⚙️ Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/sales-analytics-system.git
-cd sales-analytics-system
-```
-
-2. Create virtual environment (optional but recommended):
-
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## ▶️ How to Run
 
@@ -143,7 +113,10 @@ streamlit run dashboard.py
 
 ---
 
-## How to RUN
+## Images 
+<img width="848" height="564" alt="Screenshot 2026-05-04 000309" src="https://github.com/user-attachments/assets/c48e0138-f48b-4ecb-bdda-0d97ba90e418" />
+<img width="777" height="878" alt="Screenshot 2026-05-03 213950" src="https://github.com/user-attachments/assets/ba19f6f5-67de-4ef6-a957-802ee259dca5" />
+<img width="759" height="801" alt="Screenshot 2026-05-03 214001" src="https://github.com/user-attachments/assets/cc3d5fb0-16a7-45c0-b795-45cfaff9d4ef" />
 
 <video controls src="InShot_20260504_000216758.mp4" title="Title"></video>
 
