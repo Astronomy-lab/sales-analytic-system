@@ -1,5 +1,3 @@
-# utils/pdf_report.py
-
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet
 
