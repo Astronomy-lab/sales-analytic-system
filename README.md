@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 # 📊 Sales Analytics System
+<<<<<<< HEAD
 =======
 # Sales Analytics System (made by Aditya Vikram Singh)
+=======
+>>>>>>> b4ebd1455e19ffff43651e3493b9f7f20d32cc5a
 
 A complete **end-to-end Sales Data Analytics Project** built using Python.
 This project processes raw sales data, performs analysis, enriches data using an API, and generates reports & dashboards.
