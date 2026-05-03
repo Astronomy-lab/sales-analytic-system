@@ -150,6 +150,7 @@ streamlit run dashboard.py
 * Real-time dashboard
 * Advanced analytics (forecasting)
 * User authentication in dashboard
+* With more data
 
 ---
 
