@@ -1,164 +1,193 @@
-# Sales Analytics System (made by Aditya Vikram Singh, ID-bitsom_ba_25071160)
+# 📊 Sales Analytics System
 
-## About Assignment
-
-This is a simple **Sales Analytics System** made using Python.
-This assignment is created for **students and beginners** who are learning Python, file handling, dictionary, list, and API concept.
-
-The main work of this assignment is to:
-
-* Read sales data from a file
-* Clean and validate data
-* Do sales analysis
-* Use API to get product details
-* Generate final report
-
-This assignment is **not very advance**, it is written in easy way so beginner can understand.
+A complete **end-to-end Sales Data Analytics Project** built using Python.
+This project processes raw sales data, performs analysis, enriches data using an API, and generates reports & dashboards.
 
 ---
 
-## Folder Structure
+## 🚀 Features
+
+* 📂 File Handling (Read, Parse, Validate Data)
+* 🧹 Data Cleaning & Filtering
+* 📊 Sales Analysis:
+
+  * Total Revenue
+  * Region-wise Performance
+  * Top Selling Products
+  * Low Performing Products
+  * Customer Analysis
+  * Daily Sales Trends
+  * Peak Sales Day
+* 🌐 API Integration (Product Enrichment)
+* 📝 Automated Report Generation
+* 📈 Data Visualization (Charts & Dashboard)
+* 🖥️ Streamlit Web Dashboard (Interactive UI)
+* 📄 Export Dashboard to PDF
+
+---
+
+## 🏗️ Project Structure
 
 ```
-sales-analytics-system/<br>
+sales-analytics-system/
 │
-├── data/<br>
-│   ├── sales_data.txt<br>
-│   └── enriched_sales_data.txt<br>
+├── data/
+│   ├── sales_data.txt
+│   └── enriched_sales_data.txt
 │
-├── output/<br>
-│   └── sales_report.txt<br>
+├── output/
+│   ├── sales_report.txt
+│   └── dashboard.png
 │
-├── utils/<br>
-│   ├── file_handler.py<br>
-│   ├── data_processor.py<br>
-│   └── api_handler.py<br>
+├── utils/
+│   ├── __init__.py
+│   ├── file_handler.py
+│   ├── data_processor.py
+│   └── api_handler.py
 │
-├── main.py<br>
-└── README.md<br>
+├── main.py
+├── dashboard.py
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## Files Explanation
+## ⚙️ Installation
 
-### 1. file_handler.py
+1. Clone the repository:
 
-This file is used for **reading and cleaning sales file**.
+```bash
+git clone https://github.com/your-username/sales-analytics-system.git
+cd sales-analytics-system
+```
 
-Functions inside this file:
+2. Create virtual environment (optional but recommended):
 
-* `read_sales_data()` – reads data from text file<br>
-* `parse_transactions()` – converts raw lines into dictionary<br>
-* `validate_and_filter()` – remove invalid data and filter by region or amount<br>
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
 
-This file mostly work with **file handling** and **string split**.<br>
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-### 2. data_processor.py
+## ▶️ How to Run
 
-This file do all **calculation and analysis**.
+### 🔹 Run Main Program
 
-Functions included:
-
-* Calculate total revenue
-* Region wise sales
-* Top selling products
-* Low performing products
-* Customer analysis
-* Daily sales trend
-* Peak sales day
-* Generate final report
-
-All logic is written in very simple way using loops and dictionary.
-
----
-
-### 3. api_handler.py
-
-This file connect sales data with **DummyJSON API**.
-
-Work of this file:
-
-* Fetch product list from API
-* Match ProductID with API product id
-* Add category, brand and rating in sales data
-* Save enriched data in file
-
-This help to understand **basic API calling using requests module**.
-
----
-
-### 4. main.py
-
-This is the **main program file**.
-
-This file do following steps:
-
-1. Read sales data
-2. Parse and clean data
-3. Ask user for filter option
-4. Do analysis
-5. Fetch API data
-6. Enrich sales data
-7. Save enriched file
-8. Generate report
-
-All steps are printed so user can understand what is happening.
-
----
-
-## How to Run Project
-
-### Step 1: Install Python
-
-Make sure Python is installed.
-
-Check version:
-
-```
-python --version
-```
-
-### Step 2: Install Required Module
-
-This project need only one external module:
-
-```
-pip install requests
-```
-
-### Step 3: Run Program
-
-Go to assignment folder and run:
-
-```
+```bash
 python main.py
 ```
 
----
+### 🔹 Run Streamlit Dashboard
 
-## Output Files
-
-* `data/enriched_sales_data.txt` → Sales data with API details
-* `output/sales_report.txt` → Final analytics report
-
----
-
-## Learning Outcome
-
-After completing this project, I learn:
-
-* File reading and writing
-* Dictionary and list usage
-* Data validation
-* Basic analytics logic
-* API integration
-* Writing clean beginner level code
+```bash
+streamlit run dashboard.py
+```
 
 ---
 
-Thank you 😊
+## 📊 Sample Workflow
+
+```
+[1] Read Sales Data
+[2] Parse & Clean Data
+[3] Apply Filters
+[4] Validate Records
+[5] Perform Analysis
+[6] Fetch API Data
+[7] Enrich Dataset
+[8] Save Enriched Data
+[9] Generate Report
+[10] Display Results
+```
+
+---
+
+## 📈 Visualizations
+
+* 📊 Bar Chart → Top Products
+* 🥧 Pie Chart → Region-wise Sales %
+* 📉 Line Chart → Daily Sales Trend
+* 🖼️ Combined Dashboard Image (for resume)
+
+---
+
+## 🌐 API Used
+
+* DummyJSON Products API
+  https://dummyjson.com/products
+
+---
+
+## 📄 Output Files
+
+* `sales_report.txt` → Detailed analytics report
+* `enriched_sales_data.txt` → API enriched dataset
+* `dashboard.png` → Combined charts image
+
+---
+
+---
+
+## How to RUN
+
+
+
+
+
+
+
+---
+
+## 🛠️ Technologies Used
+
+* Python 🐍
+* Pandas (optional)
+* Matplotlib 📊
+* Streamlit 🌐
+* Requests (API)
+* File Handling (TXT Processing)
+
+---
+
+## 💡 Key Concepts Covered
+
+* Data Cleaning & Validation
+* ETL Pipeline
+* Data Aggregation
+* API Integration
+* Data Visualization
+* Dashboard Creation
+
+---
+
+## 📌 Future Improvements
+
+* Add database (MySQL / MongoDB)
+* Real-time dashboard
+* Advanced analytics (forecasting)
+* User authentication in dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Aditya**
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!
+
+---
+
 
 

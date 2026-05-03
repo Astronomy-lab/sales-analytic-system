@@ -19,6 +19,14 @@ from utils.api_handler import create_product_mapping
 from utils.api_handler import enrich_sales_data
 from utils.api_handler import save_enriched_data
 
+#----------------- VISUALIZATION ----------------
+from utils.visualizer import plot_region_sales, plot_top_products, plot_daily_sales
+from utils.visualizer import plot_region_pie
+from utils.visualizer import create_dashboard
+
+#----------------- PDF REPORT ----------------
+from utils.pdf_report import create_pdf_report
+
 
 def main():
 
@@ -42,17 +50,18 @@ def main():
         # STEP 3: FILTER OPTION
         print("\nStep 3: Filter options")
 
-        region_list = []
         amount_list = []
 
-        for item in data:
-            if item['Region'] not in region_list:
-                region_list.append(item['Region'])
+        region_list = list(set(item['Region'] for item in data))
 
+        for item in data:
             amount_list.append(item['Quantity'] * item['UnitPrice'])
 
         print("Available regions:", ", ".join(region_list))
-        print("Amount range:", min(amount_list), "to", max(amount_list))
+        if amount_list:
+            print("Amount range:", min(amount_list), "to", max(amount_list))
+        else:
+            print("No data available")
 
         user_choice = input("Do you want to filter data? (y/n): ").lower()
 
@@ -87,17 +96,29 @@ def main():
         print("\nStep 4: Validation result")
         print("Final valid records:", info['final_count'])
         print("Invalid records:", info['invalid'])
-
-        # STEP 5: BASIC ANALYSIS
+        
+        # STEP 4: Doing analysis
         print("\nStep 5: Doing analysis")
-        calculate_total_revenue(valid_data)
-        region_wise_sales(valid_data)
-        top_selling_products(valid_data)
-        low_performing_products(valid_data)
-        customer_analysis(valid_data)
-        daily_sales_trend(valid_data)
-        find_peak_sales_day(valid_data)
-        print("Analysis finished")
+
+        total = calculate_total_revenue(valid_data)
+        regions = region_wise_sales(valid_data)
+        top_products = top_selling_products(valid_data)
+        daily = daily_sales_trend(valid_data)
+
+        # print results
+        print("Total Revenue:", total)
+
+        # CREATE CHARTS
+        plot_region_sales(regions)
+        plot_top_products(top_products)
+        plot_daily_sales(daily)
+        plot_region_pie(regions)
+
+        print("Charts saved in output folder")
+        # CREATE DASHBOARD
+        create_dashboard(regions, top_products, daily)
+        # Generate PDF report
+        create_pdf_report()
 
         # STEP 6: API DATA
         print("\nStep 6: Getting product data from API")
@@ -138,6 +159,11 @@ def main():
         print("\nSome error occurred")
         print("Error message:", err)
         print("Please check input files and folder names")
+
+    print("\nTotal Revenue:", calculate_total_revenue(valid_data))
+    print("\nRegion Sales:", region_wise_sales(valid_data))
+    print("\nTop Products:", top_selling_products(valid_data))
+    print("\nLow Products:", low_performing_products(valid_data))
 
 
 # PROGRAM START
