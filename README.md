@@ -2,7 +2,6 @@
 # 📊 Sales Analytics System
 =======
 # Sales Analytics System (made by Aditya Vikram Singh)
->>>>>>> 3599abf1796c6ea33eb3bc466f2521a169c4f8eb
 
 A complete **end-to-end Sales Data Analytics Project** built using Python.
 This project processes raw sales data, performs analysis, enriches data using an API, and generates reports & dashboards.
@@ -41,17 +40,18 @@ sales-analytics-system/
 │
 ├── output/
 │   ├── sales_report.txt
-│   └── dashboard.png
+│   |── dashboard.png
+|   └── sales_analysis.pdf
 │
 ├── utils/
 │   ├── __init__.py
 │   ├── file_handler.py
 │   ├── data_processor.py
-│   └── api_handler.py
-│
+│   ├── api_handler.py
+│   ├──pdf_report.py
+|   └──visualizer.py
+|
 ├── main.py
-├── dashboard.py
-├── requirements.txt
 └── README.md
 ```
 
@@ -179,7 +179,7 @@ streamlit run dashboard.py
 
 ## 👨‍💻 Author
 
-**Aditya  Vikram Singh**
+**Aditya **
 
 ---
 
