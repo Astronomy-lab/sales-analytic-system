@@ -1,5 +1,5 @@
 =======
-# 📊 Sales Analytics System (made by Aditya Vikram Singh)
+# 📊 Sales Analytics System 
 =======
 
 A complete **end-to-end Sales Data Analytics Project** built using Python.
@@ -156,7 +156,7 @@ streamlit run dashboard.py
 
 ## 👨‍💻 Author
 
-**Aditya **
+**Aditya Vikram Singh**
 
 ---
 
